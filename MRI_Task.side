@@ -1,0 +1,80 @@
+{
+  "id": "c7539e0a-950b-4436-b955-6775ed5ff95f",
+  "version": "2.0",
+  "name": "MRI_Task",
+  "url": "https://www.djsce.ac.in",
+  "tests": [{
+    "id": "0cc3fdad-1ea2-49eb-9d05-9bd5a10bda8b",
+    "name": "MyTest",
+    "commands": [{
+      "id": "51dade2e-ab57-4ef5-9a3d-c8598e037dd5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f08654f-1327-45e7-9e08-b5cb70f2a622",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1710x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72d4d0bc-d78c-48a4-af4f-49090703bd94",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ach_tab_0 > a:nth-child(1)",
+      "targets": [
+        ["linkText=Team: U_knt_CV (Runner-up at TECH-A-THON 2024)   NEW", "linkText"],
+        ["css=#ach_tab_0 > a:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ach_tab_0']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.djsce.ac.in/docs/Runner up - TECH-A-THON 2024.pdf')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Team: U_knt_CV (Runner-up at TECH-A-THON 2024)   NEW')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win131",
+      "windowTimeout": 2000
+    }, {
+      "id": "e84368b8-c6af-4717-961b-bb6b6d34dec0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "993a27fa-2b57-4db0-bf5c-d54ec50601f0",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win131}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ee1926e-9476-42a3-b5fa-7a9950396a2c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "147d7f98-140b-46f1-be0c-ccb78a84f7a2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "942c42c7-1732-4a19-8286-2d5f6a4b5240",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0cc3fdad-1ea2-49eb-9d05-9bd5a10bda8b"]
+  }],
+  "urls": ["https://www.djsce.ac.in/"],
+  "plugins": []
+}
